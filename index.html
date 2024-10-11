@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piezoelectric Cells Project</title>
+    <style>
+     * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1b1b1b; /* Darker color for the sidebar */
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+    background-color: #343a40; /* Dark grey background for links */
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #007bff; /* Hover effect with blue */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 0;
+}
+
+header {
+    background-image: url('https://example.com/banner.jpg'); /* Replace with your banner image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background-color: #007bff;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.content-section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#background-research">Background Research</a></li>
+                <li><a href="#experiment">Experiment</a></li>
+                <li><a href="#results">Results</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <h1>Investigating Piezoelectric Cells for Sustainable Streetlights</h1>
+                <p>Welcome to our science project website, where we explore the potential of piezoelectric cells.</p>
+            </header>
+
+            <section id="about-us" class="content-section">
+                <h2>About Us</h2>
+                <p>We are a team of passionate students committed to exploring sustainable technologies. Our project investigates how different mechanical stress conditions affect the performance of piezoelectric cells.</p>
+                <button onclick="location.href='about.html'">Learn More</button>
+            </section>
+
+            <section id="background-research" class="content-section">
+                <h2>Background Research</h2>
+                <p>This section covers the theoretical foundations of piezoelectricity and its applications in renewable energy.</p>
+                <button onclick="location.href='background.html'">Learn More</button>
+            </section>
+
+            <section id="experiment" class="content-section">
+                <h2>Experiment</h2>
+                <p>Details of our experimental setup, procedures, and methodologies used to gather data on piezoelectric cell performance.</p>
+                <button onclick="location.href='experiment.html'">Learn More</button>
+            </section>
+
+            <section id="results" class="content-section">
+                <h2>Results</h2>
+                <p>Presentation of our findings, including graphs and data analysis of
