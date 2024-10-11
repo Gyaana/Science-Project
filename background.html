@@ -176,6 +176,55 @@
             <section class="content-section">
                 <h2>Potential for Sustainable Energy</h2>
                 <p>As the global focus shifts towards renewable and sustainable energy solutions, piezoelectric cells offer an innovative way to generate electricity from everyday movements. By embedding piezoelectric cells in floors, roads, and other infrastructure, the kinetic energy of human or vehicular activity can be harnessed to power small devices or streetlights.</p>
+                <button id="readMoreBtn" onclick="toggleReadMore()">Read More</button>
+    
+    <div id="moreInfo" style="display: none; margin-top: 10px;">
+        <p>Piezoelectric materials can be integrated into urban infrastructure, such as roads, sidewalks, and buildings, where vibrations from footsteps or vehicles generate energy. This energy can be stored in batteries and used during periods of low sunlight or wind, making it an excellent supplement to solar and wind energy systems.</p>
+
+        <p>Moreover, piezoelectric cells have the potential to be used in remote or disaster-struck areas where conventional power sources are inaccessible. While the technology is still developing, its ability to generate energy passively makes it a promising sustainable energy solution for the future.</p>
+
+        <p>We also explored how advancements in material science can improve the efficiency and durability of piezoelectric materials, enhancing their energy conversion rates and lifespan.</p>
+    </div>
+</section>
+
+<script>
+    function toggleReadMore() {
+        var moreInfo = document.getElementById("moreInfo");
+        var btn = document.getElementById("readMoreBtn");
+        
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+            btn.textContent = "Read Less";
+        } else {
+            moreInfo.style.display = "none";
+            btn.textContent = "Read More";
+        }
+    }
+</script>
+
+<style>
+    #readMoreBtn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #readMoreBtn:hover {
+        background-color: #0056b3;
+    }
+
+    #moreInfo p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+    }
+</style>
             </section>
 
             <button onclick="location.href='index.html'">Back to Home</button>
