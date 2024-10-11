@@ -202,8 +202,59 @@
             </section>
 
             <section class="content-section">
+                <button id="readMoreBtn" onclick="toggleReadMore()">Read More</button>
+                <div id="moreInfo" style="display: none; margin-top: 10px;">
+
                 <h2>Data Interpretation</h2>
-                <p>From the data collected, it is evident that the energy output increases with both the weight applied and the impact height. Test 4, with the highest weight and height, resulted in the maximum energy output, showcasing the efficiency of piezoelectric cells in converting mechanical stress into electrical energy.</p>
+                <p>From the data collected, it is evident that the energy output increases with both the weight applied and the impact height. The test with the highest weight (200 grams) resulted in the maximum energy output, showcasing the efficiency of piezoelectric cells in converting mechanical stress into electrical energy.</p>
+                <p>Our research suggests that as mechanical stress increases, the energy generated also increases. For a 100-gram weight, an average amount of 0.71 volts was produced. Taking the average weight of a person as 60 kilograms, which is 60000 grams, the average amount of volts generated as they walk over the piezoelectric cell is 426 volts, 
+                    which we assume as 400 volts (rounded to the nearest 100).</p>
+                <p>These results have also led us to the conclusion that many other factors affect the amount of energy produced by the cells apart from the 
+                    amount of weight used, such as the amount of time the weight was applied to the cell. Linking this other factor to the real-life scenario of 
+                    our experiment, where a person’s weight is exerted onto the cell for less than a second per footstep while walking, we imitated a footstep of 
+                    less than a second by applying constant force with a weight to resemble a human. With this prototype, we added in our values for results.  The experiment we conducted successfully 
+                    demonstrated the potential that piezoelectric cells have as a sustainable energy source, especially in devices such as streetlights and other 
+                    small-scale urban installations. By generating mechanical energy from human activity, we were able to generate electricity that could be used to 
+                    reduce our dependence on fossil fuels and decrease greenhouse gas emissions. Through the experiments we conducted, we found that the energy 
+                    produced is directly proportional to the force applied to the cell. </p>
+                    <script>
+    function toggleReadMore() {
+        var moreInfo = document.getElementById("moreInfo");
+        var btn = document.getElementById("readMoreBtn");
+        
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+            btn.textContent = "Read Less";
+        } else {
+            moreInfo.style.display = "none";
+            btn.textContent = "Read More";
+        }
+    }
+</script>
+
+<style>
+    #readMoreBtn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #readMoreBtn:hover {
+        background-color: #0056b3;
+    }
+
+    #moreInfo p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+    }
+</style>
             </section>
 
             <section class="content-section">
