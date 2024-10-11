@@ -57,6 +57,8 @@ body {
 .main-content {
     flex-grow: 1;
     padding: 0;
+    width: calc(100% - 250px); /* Ensure it takes up the remaining space */
+    overflow-y: auto; /* Add scrolling if content is too long */
 }
 
 header {
