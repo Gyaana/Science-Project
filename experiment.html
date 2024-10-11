@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment - Piezoelectric Cells Project</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #1b1b1b;
+            padding: 20px;
+            color: white;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            background-color: #343a40;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #007bff;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        header {
+            background-image: url('https://example.com/experiment-banner.jpg'); /* Replace with an actual image URL */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+            background-color: #007bff;
+            border-bottom: 4px solid #0056b3;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .content-section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .steps {
+            list-style-type: decimal;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="background.html">Background Research</a></li>
+                <li><a href="experiment.html">Experiment</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <h1>Experiment</h1>
+                <p>Details of the experiment conducted for the piezoelectric cells project.</p>
+            </header>
+
+            <section class="content-section">
+                <h2>Objective</h2>
+                <p>The primary objective of this experiment is to investigate the effect of different mechanical stress conditions (such as weight and impact height) on the electrical energy output of piezoelectric cells and how these cells can be used to power streetlights.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Materials Required</h2>
+                <ul class="steps">
+                    <li>Piezoelectric cells</li>
+                    <li>Multimeter (for measuring voltage)</li>
+                    <li>Weights (to simulate mechanical stress)</li>
+                    <li>Impact height setup (e.g., ruler or meter stick)</li>
+                    <li>Wires and connectors</li>
+                    <li>LED light or small bulb (to demonstrate energy output)</li>
+                    <li>Data recording sheet</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Experiment Procedure</h2>
+                <ol class="steps">
+                    <li>Set up the piezoelectric cells on a stable surface, ensuring that the wires are connected to the multimeter for voltage measurement.</li>
+                    <li>Apply a fixed weight on the cells and observe the voltage generated using the multimeter.</li>
+                    <li>Record the voltage output for different weights, starting from a low weight to a higher one.</li>
+                    <li>Next, simulate the impact by dropping an object from a specific height onto the piezoelectric cells.</li>
+                    <li>Measure and record the voltage output for varying heights to see how impact affects the energy generated.</li>
+                    <li>Finally, connect the output to the LED light to demonstrate that the piezoelectric cells can power a streetlight.</li>
+                </ol>
+            </section>
+
+            <section class="content-section">
+                <h2>Data Collection</h2>
+                <p>Record the voltage generated for different weight and impact conditions. Create a table to organize the results, making it easier to analyze the efficiency of the piezoelectric cells under different mechanical stresses.</p>
+            </section>
+
+            <button onclick="location.href='index.html'">Back to Home</button>
+        </main>
+    </div>
+</body>
+</html>
